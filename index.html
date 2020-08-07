@@ -161,8 +161,20 @@
     </footer>
     </main>
 
-    <script id="cid0020000257166162364" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js"
-        style="width: 313px;height: 400px;">{ "handle": "student764", "arch": "js", "styles": { "a": "202020", "b": 100, "c": "FFFFFF", "d": "FFFFFF", "k": "202020", "l": "202020", "m": "202020", "n": "FFFFFF", "p": "10", "q": "202020", "r": 100, "t": 0, "pos": "br", "cv": 1, "cvbg": "202020", "cvw": 200, "cvh": 30, "surl": 0, "ticker": 1, "fwtickm": 1 } }</script>
+    <script>
+        (function(d,t) {
+          var BASE_URL = "https://app.chatwoot.com";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src= BASE_URL + "/packs/js/sdk.js";
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: '5Hf4KBcCVk6cEtt55AK1wors',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");
+      </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
